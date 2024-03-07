@@ -16,11 +16,8 @@
             "dest": "/api/index.php"
         }
     ],
-    
-    "regions": [
-        "hnd1"
-    ],
-       
+
+
     "env": {
         "APP_NAME": "Laravel Vercel",
         "APP_DEBUG": "false",
