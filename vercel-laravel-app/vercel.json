@@ -7,16 +7,22 @@
         },
         {
             "src": "public/**",
-            "use": "@vercel/static"
+            "use": "vercel-php@0.6.0"
         }
     ],
+
     "routes": [
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
     ],
-
+    
+    "rewrites": [
+        {
+            "source": "/(.*)", "destination": "/"
+        }
+        ],
 
     "env": {
         "APP_NAME": "Laravel Vercel",
